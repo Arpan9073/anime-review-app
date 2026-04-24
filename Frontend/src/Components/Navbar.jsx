@@ -1,32 +1,25 @@
-import React from "react";
-import "./Navbar.css";
+import { IoMenu } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
+import { FaRegBell } from "react-icons/fa6";
+import './Navbar.css';
 
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      {/* Logo */}
-      <div className="logo">AnimeZ</div>
-
-      <div className="opt">
-        {/* Links */}
-        <div className="nav-links">
-          <a href="/">Home</a>
-          <a href="/top">Top Anime</a>
-        </div>
-
-        {/* Search */}
-        <input
-          type="text"
-          placeholder="Search anime..."
-          className="search-bar"
-        />
-
-        {/* Button */}
-        <button className="signin-btn">Sign In</button>
-        <button className="login-btn">Log In</button>
+function Navbar(){
+  return(
+    <nav>
+      <div className="title">
+        <IoMenu size={30} className="menu"/>
+        <h1>
+          AnimeZ
+        </h1>
       </div>
+      <div className="search">
+        <input type="search" name="anime-name" id="anime-name" className="search-anime"/>
+        <IoSearch className="search-icon"/>
+      </div>
+      <FaRegBell size={20} className="notifi"/>
     </nav>
   );
-};
+}
+
 
 export default Navbar;

@@ -1,76 +1,66 @@
-/* Navbar container */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+nav{
+  color: #9D4EDD;
+  background-color: black;
+  padding: 8px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 12px 20px;
-  background-color: #121212;
-  color: white;
+  align-items: center;
 }
 
-/* Logo */
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.opt{
-    display: flex;
-    gap: 10px;
-}
-
-/* Links */
-.nav-links {
+nav .title{
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
+nav .title .menu{
+  color: #9D4EDD;
 }
 
-.nav-links a:hover {
-  color: #ff4d4d;
-}
-
-/* Search bar */
-.search-bar {
-  padding: 6px 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-/* Button */
-.login-btn {
-  padding: 6px 12px;
-  background-color: #ff4d4d;
-  border: none;
-  border-radius: 5px;
-  color: white;
+nav .title .menu:hover{
+  color: #00E5FF;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.login-btn:hover {
-  background-color: #e60000;
+nav .title h1{
+  text-shadow: 2px 2px 5px #981efc;
 }
 
-.signin-btn {
-  padding: 6px 12px;
-  background-color: #ff5016;
-  border: none;
-  border-radius: 5px;
-  color: white;
+nav .search{
+  position: relative;
+}
+
+nav .search .search-icon{
+  position: absolute;
+  right: 10px;   /* move inside input from right */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9D4EDD;
+}
+
+nav .search .search-icon:hover{
+  color: #00E5FF;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.signin-btn:hover {
-  background-color: #f94747;
+nav .search .search-anime{
+  height: 30px;
+  width: 300px;
+  padding-right: 25px;
+  padding-left: 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #383838;
+  color: white;
+}
+
+nav .notifi{
+  color: #9D4EDD;
+}
+
+nav .notifi:hover{
+  color: #00E5FF;
+  cursor: pointer;
 }
